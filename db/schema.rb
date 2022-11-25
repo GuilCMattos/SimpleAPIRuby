@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_25_130558) do
+ActiveRecord::Schema.define(version: 2022_11_25_151718) do
 
 # Could not dump table "contacts" because of following StandardError
 #   Unknown type 'reference' for column 'kind'
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 2022_11_25_130558) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "phones", force: :cascade do |t|
+    t.string "number"
+    t.integer "contact_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["contact_id"], name: "index_phones_on_contact_id"
   end
 
 end
