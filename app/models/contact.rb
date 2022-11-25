@@ -1,5 +1,6 @@
 class Contact < ApplicationRecord
     has_many :phones
+    accepts_nested_attributes_for :phones
 
     # def birthdate_br 
     #    I18n.l(self.birthdate) unless self.birthdate.blank?
