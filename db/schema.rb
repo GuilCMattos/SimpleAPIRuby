@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_25_105246) do
+ActiveRecord::Schema.define(version: 2022_11_25_130558) do
 
-  create_table "contacts", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.date "birthdate"
+# Could not dump table "contacts" because of following StandardError
+#   Unknown type 'reference' for column 'kind'
+
+  create_table "kinds", force: :cascade do |t|
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
