@@ -1,4 +1,4 @@
 class PhoneSerializer < ActiveModel::Serializer
-    attributes :id, :description
+    attributes :id, :number
   end
   
