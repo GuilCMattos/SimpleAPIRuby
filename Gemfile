@@ -14,21 +14,27 @@ gem 'rails-i18n', '~> 5.0.0'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+# A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard
+gem 'jwt'
+# Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
+gem 'devise_token_auth'
+
+
+gem 'foreman'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'foreman'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
- gem 'rack-cors'
- gem 'active_model_serializers', '~> 0.10.0'
- gem 'jwt'
+gem 'rack-cors'
+# ActiveModel::Serializer implementation and Rails hooks
+gem 'active_model_serializers', '~> 0.10.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
