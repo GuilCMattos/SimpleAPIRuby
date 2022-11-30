@@ -1,12 +1,15 @@
-module V2
+module V1
  class ContactsController < ApplicationController
     before_action :set_contact, only: [:show, :update, :destroy]
 
     # GET /contacts
     def index
+      page_number = params[:page].try(:[], :number)
+      per_page = params[:page].try(:[], :size)
     
-      @contacts = Contact.all
+      @contacts = Contact.all.page(page_number).per(per_page)
 
+      #.per(params[:page][:size])
 
       render json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
     end

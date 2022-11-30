@@ -19,6 +19,8 @@ gem 'jwt'
 # Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
 gem 'devise_token_auth'
 gem 'versionist'
+gem 'kaminari'
+gem 'api-pagination'
 
 
 gem 'foreman'
