@@ -21,6 +21,7 @@ gem 'devise_token_auth'
 gem 'versionist'
 gem 'kaminari'
 #gem 'api-pagination'
+gem 'rspec-rails', '~> 3.5'
 
 
 gem 'foreman'

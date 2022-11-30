@@ -15,4 +15,4 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 end
 
-Rails.application.config.middleware.use "AppName", "Notebook API - OK!"
+# Rails.application.config.middleware.use "AppName", "Notebook API - OK!"

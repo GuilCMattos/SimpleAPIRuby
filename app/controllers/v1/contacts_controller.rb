@@ -15,7 +15,7 @@ module V1
 
       #.per(params[:page][:size])
 
-      render json: @contacts #, methods: :birthdate_br #[:hello, :i18n]
+       #, methods: :birthdate_br #[:hello, :i18n]
     end
 
     # GET /contacts/1
