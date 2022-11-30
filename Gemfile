@@ -20,7 +20,7 @@ gem 'jwt'
 gem 'devise_token_auth'
 gem 'versionist'
 gem 'kaminari'
-gem 'api-pagination'
+#gem 'api-pagination'
 
 
 gem 'foreman'
